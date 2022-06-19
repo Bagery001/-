@@ -1,7 +1,7 @@
 实验二
 
 结果：
-  ![Image text]()
+  ![Image text](https://github.com/Bagery001/-/blob/main/%E6%9D%8E%E6%9E%97%E8%94%93-20201050336/work2/%E5%AE%9E%E9%AA%8C2.jpg)
 
 总结：
 计算机中，直线并不是连续的，二是离散的点，这是光珊化的本质决定的。
