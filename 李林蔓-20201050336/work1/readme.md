@@ -21,4 +21,5 @@ void lineSegment(void)
 
 结果：
 ![Image text](https://github.com/Bagery001/-/blob/main/%E6%9D%8E%E6%9E%97%E8%94%93-20201050336/work1/%E5%AE%9E%E9%AA%8C1.jpg)
+
 总结：学习了利用OpenGL画出图形，虽然画出的图形比较简单和粗糙，之后希望可以更精致。
