@@ -1,5 +1,32 @@
 实验二
 
+1、实验内容：
+熟悉OPENGL，通过DDA、中点算法生成直线段
+
+2、实验目的：
+安装OPENGL，能编写代码运行，参考课本代码。
+
+关键代码：
+void DDA_Line(int x1, int y1, int x2, int y2) {
+	double dx, dy, e, x, y;
+	dx = x2 - x1;
+	dy = y2 - y1;
+	e = (fabs(dx) > fabs(dy)) ? fabs(dx) : fabs(dy);
+	dx /= e;
+	dy /= e;
+	x = x1;
+	y = y1;
+	for (int i = 0; i < e; i++) {
+		glPointSize(5.0);
+		glBegin(GL_POINTS);
+		glVertex2i(int(x + 0.5), int(y + 0.5));
+		glEnd();
+		glFlush();
+		x += dx;
+		y += dy;
+	}
+}
+
 结果：
   ![Image text](https://github.com/Bagery001/-/blob/main/%E6%9D%8E%E6%9E%97%E8%94%93-20201050336/work2/%E5%AE%9E%E9%AA%8C2.jpg)
 
