@@ -11,7 +11,7 @@ void MidpointBresenham(int x0,int y0,int x1,int y1) { //中点Bresenham算法画
           ……
       }
 结果：
-![Image text]()
+![Image text](https://github.com/Bagery001/-/blob/main/%E6%9D%8E%E6%9E%97%E8%94%93-20201050336/work3/%E5%AE%9E%E9%AA%8C3.1.jpg)
 
 改进：
 关键代码：见cpp文件
@@ -19,7 +19,7 @@ void ProBresenham(int x0, int y0, int x1, int y1){//改进的Bresenham算法
           ……
       }
 结果：
-![Image text]()
+![Image text](https://github.com/Bagery001/-/blob/main/%E6%9D%8E%E6%9E%97%E8%94%93-20201050336/work3/%E5%AE%9E%E9%AA%8C3.2.jpg)
 
 总结：
 首先假设0≤k≤1，由于x是最大位移方向，因此每次在x方向上加1，y方向上或加1 或加0。假定当前点是P(xi,yi),则下一个点在pu(xi+1,yi+1)与pd(xi+1,yi)中选一。以M表示pu和pd的终点即M(xi+1,yi+0.5)。又设Q是理想直线与垂直线x=xi+1的交点。
