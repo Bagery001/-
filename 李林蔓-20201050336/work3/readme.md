@@ -10,6 +10,7 @@ Bresenham中点
 void MidpointBresenham(int x0,int y0,int x1,int y1) { //中点Bresenham算法画线
           ……
       }
+      
 结果：
 ![Image text](https://github.com/Bagery001/-/blob/main/%E6%9D%8E%E6%9E%97%E8%94%93-20201050336/work3/%E5%AE%9E%E9%AA%8C3.1.jpg)
 
@@ -18,6 +19,7 @@ void MidpointBresenham(int x0,int y0,int x1,int y1) { //中点Bresenham算法画
 void ProBresenham(int x0, int y0, int x1, int y1){//改进的Bresenham算法
           ……
       }
+      
 结果：
 ![Image text](https://github.com/Bagery001/-/blob/main/%E6%9D%8E%E6%9E%97%E8%94%93-20201050336/work3/%E5%AE%9E%E9%AA%8C3.2.jpg)
 
