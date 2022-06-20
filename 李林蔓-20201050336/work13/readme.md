@@ -86,3 +86,15 @@ void winReshapeFcn(GLint newWidth,GLint newHeight)
 }
 
 总结：
+幸运的是，某些标准的形体–五种规则多面体–由GLUT库中的子程序预先定义。这些多面体也称为柏拉图式实体，由它的每一面是一个单位规则多边形来标识。
+GLUT中总共有10个函数用来生成这些实体
+    glutWireTetrahedron();//规则三棱锥线框图
+    glutSolidTetrahedron();//规则三棱锥实体图
+    glutWireCube(1.0);//规则立方体线框图
+    glutSolidCube(1.0);
+    glutWireOctahedron();//规则八面体线框图
+    glutSolidOctahedron();
+    glutWireDodecahedron();//规则十二面体线框图
+    glutSolidOctahedron();
+    glutWireIcosahedron();//规则二十面体线框图
+    glutSolidIcosahedron();
