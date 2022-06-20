@@ -1,3 +1,4 @@
+//建模实验
 #include <windows.h>
 #include <GL/glut.h>
 
