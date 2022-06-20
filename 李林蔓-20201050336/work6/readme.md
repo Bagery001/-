@@ -71,99 +71,50 @@ void Rotation2D(Point shape[], int n, float angle, Point Rshape[]) {
 
 总结：
 设有一三角形ABC,其中三个顶点为A(5,10),B(1,2),C(8,5)，求对于直线-2x+3y+3=0的对称变换后的图形结果。
-
 %-2x+3y+3=0
-
-clear;
-
-clc;
-
 X1=[-1 10];
-
 Y1=[-5/3 17/3];
-
 plot(X1,Y1);
-
 hold on;
-
 x=atan(2/3);
-
 X2=[5 1 8  5];
-
 Y2=[10 2 5 10];
-
 plot(X2,Y2,'b');
-
 %用鼠标标出DABC
-
 gtext('A(5,10)');
-
 gtext('B(1,2)');
-
 gtext('C(8,5)');
-
 P=[5   10 1
-
    1   2  1
-
    8   5  1];
-
 T=[cos(2*x)            sin(2*x)       0
-
    sin(2*x)            -cos(2*x)      0
-
    -(cos(2*x)-1)*3/2   -sin(2*x)*3/2  1];
-
  P1=P*T;
-
 X3=[P1(1,1),P1(2,1),P1(3,1),P1(1,1)];
-
 Y3=[P1(1,2),P1(2,2),P1(3,2),P1(1,2)];
-
 plot(X3,Y3,'r');
-
 %画X及Y轴
-
 X4=[-2,14];
-
 Y4=[0,0];
-
 plot(X4,Y4,'m');
-
 X4=[0,0];
-
 Y4=[-2,12];
-
 plot(X4,Y4,'m');
-
 %用鼠标标志有关点
-
 gtext('0(0,0)');
-
 xlabel('X-轴');
-
 ylabel('Y-轴');
-
 gtext('A1(12.1,-0.6)');
-
 gtext('B1(3.2,-1.2)');
-
 gtext('C1(8.6,4.1)');
-
 gtext('X');
-
 gtext('Y');
-
 gtext('-2x+3y+3=0');
-
 axis equal;
-
 T1=[1     0   0
-
     0     1   0
-
     -3/2  0   1];
-
 T2=[cos(x)   -sin(x)   0
     sin(x)    cos(x)   
     0         0        1];
