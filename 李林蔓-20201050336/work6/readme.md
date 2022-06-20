@@ -3,7 +3,7 @@
 验证二维几何变换，熟悉变换矩阵；（平移、比例、旋转、对称）
 
 结果：
-![Image text]()
+![Image text](https://github.com/Bagery001/-/blob/main/%E6%9D%8E%E6%9E%97%E8%94%93-20201050336/work6/%E5%AE%9E%E9%AA%8C6.jpg)
 
 关键代码：
 /*采用行向量矩阵，把P'=M*P的变换矩阵M和列向量P转置，CT=(AB)T=BT*AT,得到的结果也是行向量*/
