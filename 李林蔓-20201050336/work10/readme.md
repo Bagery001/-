@@ -9,7 +9,7 @@
 
 结果：
 片元着色器（课本代码，运行错误）
-![Image text]([https://github.com/Bagery001/-/blob/main/%E6%9D%8E%E6%9E%97%E8%94%93-20201050336/work10/%E5%AE%9E%E9%AA%8C10-2%E5%BB%BA%E6%A8%A1%E5%AE%9E%E9%AA%8C.jpg](https://github.com/Bagery001/-/blob/main/%E6%9D%8E%E6%9E%97%E8%94%93-20201050336/work10/%E5%AE%9E%E9%AA%8C10-1%E7%89%87%E5%85%83%E7%9D%80%E8%89%B2%E5%99%A8%E7%9D%80%E8%89%B2%E9%94%99%E8%AF%AF%E8%BF%90%E8%A1%8C.jpg))
+![Image text](https://github.com/Bagery001/-/blob/main/%E6%9D%8E%E6%9E%97%E8%94%93-20201050336/work10/%E5%AE%9E%E9%AA%8C10-1%E7%89%87%E5%85%83%E7%9D%80%E8%89%B2%E5%99%A8%E7%9D%80%E8%89%B2%E9%94%99%E8%AF%AF%E8%BF%90%E8%A1%8C.jpg)
 
 建模实验（书中代码）
 ![Image text](https://github.com/Bagery001/-/blob/main/%E6%9D%8E%E6%9E%97%E8%94%93-20201050336/work10/%E5%AE%9E%E9%AA%8C10-2%E5%BB%BA%E6%A8%A1%E5%AE%9E%E9%AA%8C.jpg)
