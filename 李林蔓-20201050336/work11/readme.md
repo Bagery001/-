@@ -9,9 +9,9 @@
  设置输入输出语句，配合scanf人机交互，由用户对旋转轴和角度进行指定。填充图定位在固定点，旋转线框图来进行对照。
  
  结果：
- ![Image text]()
- ![Image text]()
- ![Image text]()
+ ![Image text](https://github.com/Bagery001/-/blob/main/%E6%9D%8E%E6%9E%97%E8%94%93-20201050336/work11/%E5%AE%9E%E9%AA%8C11-1.jpg)
+ ![Image text](https://github.com/Bagery001/-/blob/main/%E6%9D%8E%E6%9E%97%E8%94%93-20201050336/work11/%E5%AE%9E%E9%AA%8C11-2.jpg)
+ ![Image text](https://github.com/Bagery001/-/blob/main/%E6%9D%8E%E6%9E%97%E8%94%93-20201050336/work11/%E5%AE%9E%E9%AA%8C11-3.jpg)
  
  关键代码：
  void displayWirePolyhedra(float x,float y,float z,float thera){
