@@ -12,8 +12,6 @@ GLfloat planet[]= {0.0, -1.0,  0.0, 1.0};
 	GLfloat colors[][4] = {{0.0,0.0,0.0,0.5},{1.0,0.0,0.0,0.5},
 	{1.0,1.0,0.0,0.5}, {0.0,1.0,0.0,0.5}, {0.0,0.0,1.0,0.5},
 	{1.0,0.0,1.0,0.5}, {1.0,1.0,1.0,0.5}, {0.0,1.0,1.0,0.5}};
-
-
 typedef struct lightStruct
 {
 	GLfloat position[4];
@@ -44,9 +42,6 @@ void setLight()
 
 void polygon(int a, int b, int c , int d)
 {
-
-
-
  	glBegin(GL_POLYGON);
 	/*	glColor4fv(colors[a]);*/
 	/*	glTexCoord2f(0.0,0.0); */
@@ -60,14 +55,11 @@ void polygon(int a, int b, int c , int d)
 	/*	glColor4fv(colors[d]); */
 	/*	glTexCoord2f(1.0,0.0); */
 		glVertex3fv(vertices[d]);
-	glEnd();
-																										}
+	glEnd();																						}
 
 void colorcube(void)
 {
-
 /* map vertices to faces */
-
 	polygon(0,3,2,1);
 	polygon(2,3,7,6);
 	polygon(0,4,7,3);
@@ -81,9 +73,6 @@ static GLint axis = 2;
 
 void display(void)
 {
-
-
-
 	//清除显存
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glLoadIdentity();
@@ -102,9 +91,6 @@ void display(void)
 
 void spinCube()
 {
-
-
-
 	//控制旋转的角度和速度
 	theta[axis] += 0.1;
 	if( theta[axis] > 360.0 ) theta[axis] -= 360.0;
@@ -117,14 +103,10 @@ void spinCube()
 void mouse(int btn, int state, int x, int y)
 {
 
-
-
 	if(btn==GLUT_LEFT_BUTTON && state == GLUT_DOWN) axis = 0;
 	if(btn==GLUT_MIDDLE_BUTTON && state == GLUT_DOWN) axis = 1;
 	if(btn==GLUT_RIGHT_BUTTON && state == GLUT_DOWN) axis = 2;
 }
-
-
 
 void myReshape(int w, int h)
 {
@@ -141,9 +123,8 @@ void myReshape(int w, int h)
     glMatrixMode(GL_MODELVIEW);
 }
 
-
 //响应键盘点击事件，改变茶壶旋转方向
-void key(char k, int x, int y)
+void key(unsigned char k, int x, int y)
 {
 
 	if(k == '1') axis = 0;
@@ -154,7 +135,6 @@ void key(char k, int x, int y)
 
 int main(int argc, char **argv)
 {
-
    GLubyte image[64][64][3];
    int i, j, r, c;
    for(i=0;i<64;i++)
@@ -171,8 +151,6 @@ int main(int argc, char **argv)
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
     glutInitWindowSize(500, 500);
     glutCreateWindow("计算机科学与技术 李林蔓 20201050336");
-
-
 
    glutReshapeFunc(myReshape);
    glutDisplayFunc(display);
@@ -204,7 +182,6 @@ format和internalformat一样。
 Type: 此参数决定了pixel中的一个像素的比特组成，GL_UNSIGNED_BYTE为1位。此位通常为元像素(r+g+b)/3得出:
 */
    //此处显示的是马赛克的贴图
-
    glTexImage2D(GL_TEXTURE_2D,0,3,64,64,0,GL_RGB,GL_UNSIGNED_BYTE, image);
    glTexParameterf(GL_TEXTURE_2D,GL_TEXTURE_WRAP_S,GL_REPEAT);
    glTexParameterf(GL_TEXTURE_2D,GL_TEXTURE_WRAP_T,GL_REPEAT);
@@ -214,10 +191,7 @@ Type: 此参数决定了pixel中的一个像素的比特组成，GL_UNSIGNED_BYT
  /*  gluBuild2DMipmaps(GL_TEXTURE_2D,3,64,64,GL_RGB,GL_UNSIGNED_BYTE, image);*/
  /*  glEnable(GL_BLEND);
    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);*/
-
-
-
-	//glutKeyboardFunc(key);
+	glutKeyboardFunc(key);
 	glClearColor(1.0,0.5,1.0,1.0);
     glutMainLoop();
 
